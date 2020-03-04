@@ -1,0 +1,12 @@
+<h1> <?php echo $judul; ?> </h1>
+<?php echo form_open('hitung/perkalian'); ?>
+<?php echo form_input('angka1',$angka1); ?> X
+<?php echo form_input('angka2',$angka2); ?>
+<br>
+<?php echo form_submit('submit','hitung'); ?>
+<?php echo form_close(); ?>
+<br>
+hasil : <?php echo $hasil; ?>
+<ul>
+	<li><?php echo anchor('hitung','kembali'); ?></li>
+</ul>
